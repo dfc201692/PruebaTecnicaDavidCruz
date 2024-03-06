@@ -1,9 +1,10 @@
 package proyectoAspirantes.demo.Entidades;
 
+
 import jakarta.persistence.*;
 
 @Entity
-@Table(name = "programas_academicos")
+@Table(name = "programaacademico")
 public class ProgramaAcademico {
 
     @Id

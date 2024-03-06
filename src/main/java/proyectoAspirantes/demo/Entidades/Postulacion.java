@@ -1,11 +1,10 @@
 package proyectoAspirantes.demo.Entidades;
 
 import jakarta.persistence.*;
-
 import java.util.Date;
 
 @Entity
-@Table(name = "postulaciones")
+@Table(name = "postulacion")
 public class Postulacion {
 
     @Id

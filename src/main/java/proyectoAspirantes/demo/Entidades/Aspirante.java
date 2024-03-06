@@ -1,7 +1,7 @@
 package proyectoAspirantes.demo.Entidades;
 
-import jakarta.persistence.*;
 
+import jakarta.persistence.*;
 import java.util.Date;
 
 @Entity

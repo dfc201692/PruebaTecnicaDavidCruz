@@ -1,9 +1,10 @@
 package proyectoAspirantes.demo.Entidades;
 
+
 import jakarta.persistence.*;
 
 @Entity
-@Table(name = "tipos_documentos")
+@Table(name = "tipodocumento")
 public class TipoDocumento {
 
     @Id
