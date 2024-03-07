@@ -6,6 +6,7 @@ import proyectoAspirantes.demo.Entidades.Aspirante;
 import proyectoAspirantes.demo.Repositorios.AspiranteRepository;
 
 import java.util.Date;
+import java.util.List;
 
 @Service
 public class AspiranteService {
@@ -15,6 +16,11 @@ public class AspiranteService {
 
     public void registrar(Aspirante aspirante) {
         aspirante.setFechaRegistro(new Date());
-        aspiranteRepository.save(aspirante);
+        aspiranteRepository.saveAndFlush(aspirante);
     }
+
+    public List<Aspirante> obtenerTodos() {
+        return aspiranteRepository.findAll();
+    }
+
 }

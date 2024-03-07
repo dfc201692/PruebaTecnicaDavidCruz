@@ -28,11 +28,5 @@ public class PostulacionService {
         return postulacionRepository.findByProgramaAcademico(programaAcademico);
     }
 
-
-
-    /* En la interfaz PostulacionRepository:
-    @Query("SELECT p FROM Postulacion p WHERE p.programaAcademico = :programaAcademico")
-    List<Postulacion> findByProgramaAcademico(@Param("programaAcademico") ProgramaAcademico programaAcademico);
-*/
 }
 

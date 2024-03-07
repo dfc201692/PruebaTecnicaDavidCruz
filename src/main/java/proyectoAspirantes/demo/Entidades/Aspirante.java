@@ -20,6 +20,12 @@ public class Aspirante {
     private Date fechaNacimiento;
     private Date fechaRegistro;
 
+    // Método para establecer la fecha de registro automáticamente
+    @PrePersist
+    protected void onCreate() {
+        this.fechaRegistro = new Date();
+    }
+
     public Long getId() {
         return id;
     }
@@ -81,6 +87,20 @@ public class Aspirante {
     }
 
     public void setFechaRegistro(Date fechaRegistro) {
+        this.fechaRegistro = fechaRegistro;
+    }
+
+    public Aspirante() {
+    }
+
+    public Aspirante(Long id, String nombres, String apellidos, String tipoDocumento, String numeroDocumento, String correoElectronico, Date fechaNacimiento, Date fechaRegistro) {
+        this.id = id;
+        this.nombres = nombres;
+        this.apellidos = apellidos;
+        this.tipoDocumento = tipoDocumento;
+        this.numeroDocumento = numeroDocumento;
+        this.correoElectronico = correoElectronico;
+        this.fechaNacimiento = fechaNacimiento;
         this.fechaRegistro = fechaRegistro;
     }
 }
